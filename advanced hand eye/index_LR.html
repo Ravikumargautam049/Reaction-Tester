@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left Right Game</title>
+  <link rel="stylesheet" href="style_LR.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </div>
+
+  <div class="score">Left Score: <span id="leftScore">0</span></div>
+  <div class="score" style="left: auto; right: 10px;">Right Score: <span id="rightScore">0</span></div>
+  <div class="timer">Timer: <span id="timer">60</span></div>
+
+  <!-- <div class="scorecard" id="scorecard" style="display: none;"></div> -->
+  <button class="play-btn" id="playBtn">Play</button>
+
+  <div id="countdown"></div>
+
+
+  <!-- Add audio element for tik tik sound -->
+  <audio id="tikTikSound">
+    <source src="/assest/tiktik.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="click">
+    <source src="/assest/click.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="gameOver">
+    <source src="/assest/gameOver.wav" type="audio/mpeg">
+  </audio>
+  <script src="script_LR.js"></script>
+</body>
+</html>
